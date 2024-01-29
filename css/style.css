@@ -1107,6 +1107,10 @@ header {
             .about-section {
                 padding: 5% 0;
             }
+	.hero-text:last-child h2 {
+	 
+	    line-height: 1.2;
+	}	
 }
 @media screen and (max-width: 425px) {
     .about-section h2 {
