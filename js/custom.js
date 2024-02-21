@@ -27,14 +27,14 @@ $(window).scroll(function() {
   const textLeft = gsap.timeline({
       scrollTrigger: {
           scrub: true, // Smoothly animates in relation to scroll position
-          duration: 5,
+          duration: 1,
         
       }
   });
   const textRight = gsap.timeline({
       scrollTrigger: {
           scrub: true, // Smoothly animates in relation to scroll position
-          duration: 5,
+          duration: 1,
 
       }
   });
@@ -44,10 +44,10 @@ $(window).scroll(function() {
   textRight.to(box2, { x: '-100vw',fontSize:70 ,color:"#f3a20d",opacity:1});
 
  // Animation using GSAP on scroll
- window.addEventListener("scroll", function() {
-  var scrollY = window.scrollY;
-  gsap.to("#heroRightImg", { top: -scrollY, duration: 0.5, ease: "power2.out" });
-});
+//  window.addEventListener("scroll", function() {
+//   var scrollY = window.scrollY;
+//   gsap.to("#heroRightImg", { top: -scrollY, duration: 0.5, ease: "power2.out" });
+// });
 
 });
 
